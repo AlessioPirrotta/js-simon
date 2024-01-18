@@ -30,7 +30,7 @@ function updateCountdown() {
         let ore = Math.floor((tempoMancante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
         let minuti = Math.floor((tempoMancante % (1000 * 60 * 60)) / (1000 * 60))
         let secondi = Math.floor((tempoMancante % (1000 * 60)) / 1000)
-        tempo.innerHTML = `${formatNumber(ore)}<span style="font-size: 15px;" class="fw-bold ">h</span>.${formatNumber(minuti)}<span style="font-size: 15px;" class="fw-bold">m</span>.${formatNumber(secondi)}<span style="font-size: 15px;" class="fw-bold">s</span>`
+        tempo.innerHTML = `${formatNumber(ore)}<span style="font-size: 15px;" class="fw-bold ">h</span>${formatNumber(minuti)}<span style="font-size: 15px;" class="fw-bold">m</span>${formatNumber(secondi)}<span style="font-size: 15px;" class="fw-bold">s</span>`
     }    
 }
 function formatNumber(numero) {
